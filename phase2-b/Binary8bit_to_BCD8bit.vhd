@@ -29,16 +29,16 @@ begin
 	integer_value <= to_integer(unsigned(a));
 		Decimal <= 
 		0 when integer_value >= 0 and integer_value < 10 else 
-		1 when integer_value > 10 and integer_value < 20 else 
-		2 when integer_value > 20 and integer_value < 30 else 
-        3 when integer_value > 30 and integer_value < 40 else 
-		4 when integer_value > 40 and integer_value < 50 else 
-		5 when integer_value > 50 and integer_value < 60 else 
-		6 when integer_value > 60 and integer_value < 70 else 
-		7 when integer_value > 70 and integer_value < 80 else 
-		8 when integer_value > 80 and integer_value < 90 else
-		9 when integer_value > 90 and integer_value < 100 else
-		10 when integer_value > 100 else		
+		1 when integer_value >= 10 and integer_value < 20 else 
+		2 when integer_value >= 20 and integer_value < 30 else 
+        3 when integer_value >= 30 and integer_value < 40 else 
+		4 when integer_value >= 40 and integer_value < 50 else 
+		5 when integer_value >= 50 and integer_value < 60 else 
+		6 when integer_value >= 60 and integer_value < 70 else 
+		7 when integer_value >= 70 and integer_value < 80 else 
+		8 when integer_value >= 80 and integer_value < 90 else
+		9 when integer_value >= 90 and integer_value < 100 else
+		10 when integer_value >= 100 else		
         10;
 		
 		get_ones(integer_value,decimal,ones);
